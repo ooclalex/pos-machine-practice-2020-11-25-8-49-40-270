@@ -4,6 +4,8 @@ import java.util.List;
 
 public class PosMachine {
     public String printReceipt(List<String> barcodes) {
-        return null;
+        Receipt receipt = new Receipt();
+        receipt.updateUsingBarcodes(barcodes);
+        return receipt.print();
     }
 }
